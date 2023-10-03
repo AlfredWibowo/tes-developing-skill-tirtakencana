@@ -26,7 +26,8 @@
                 <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
                 <li class="nav-item">
-                    <a href="#" class="nav-link active">
+                    <a href="{{ route('table-a.index') }}"
+                        class="nav-link {{ Request::routeIs('table-a*') ? 'active' : '' }}">
                         <i class="nav-icon fas fa-table"></i>
                         <p>
                             Table A
@@ -34,7 +35,8 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="{{ route('table-b.index') }}"
+                        class="nav-link {{ Request::routeIs('table-b*') ? 'active' : '' }}">
                         <i class="nav-icon fas fa-table"></i>
                         <p>
                             Table B
@@ -42,7 +44,8 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="{{ route('table-c.index') }}"
+                        class="nav-link {{ Request::routeIs('table-c*') ? 'active' : '' }}">
                         <i class="nav-icon fas fa-table"></i>
                         <p>
                             Table C
@@ -50,7 +53,8 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="{{ route('table-d.index') }}"
+                        class="nav-link {{ Request::routeIs('table-d*') ? 'active' : '' }}">
                         <i class="nav-icon fas fa-table"></i>
                         <p>
                             Table D

@@ -17,4 +17,9 @@ class TableA extends Model
     public $timestamps = false;
 
     const UPDATED_AT = null;
+
+    public function getRouteKeyName()
+    {
+        return 'kode_toko_baru';
+    }
 }
